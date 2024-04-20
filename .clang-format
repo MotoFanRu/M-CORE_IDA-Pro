@@ -1,0 +1,44 @@
+AccessModifierOffset: -4
+AlignAfterOpenBracket: DontAlign
+AlignConsecutiveAssignments: Consecutive
+AlignConsecutiveBitFields: Consecutive
+AlignOperands: AlignAfterOperator
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortBlocksOnASingleLine: Always
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: true
+BasedOnStyle: LLVM
+BraceWrapping:
+  AfterClass: false
+  AfterControlStatement: MultiLine
+  AfterEnum: false
+  AfterFunction: false
+  AfterNamespace: false
+  AfterStruct: false
+  AfterUnion: false
+  BeforeCatch: false
+  BeforeElse: false
+  IndentBraces: false
+  SplitEmptyFunction: true
+  SplitEmptyRecord: true
+BreakBeforeBraces: Custom
+ColumnLimit: 0
+Cpp11BracedListStyle: false
+FixNamespaceComments: false
+IndentCaseLabels: false
+IndentPPDirectives: None
+IndentWidth: 4
+MaxEmptyLinesToKeep: 10
+NamespaceIndentation: All
+PointerAlignment: Right
+SortIncludes: Never
+SortUsingDeclarations: false
+SpaceAfterCStyleCast: false
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyParentheses: false
+SpacesInCStyleCastParentheses: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+TabWidth: 4
+UseTab: Never
