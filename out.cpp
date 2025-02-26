@@ -12,6 +12,7 @@
 
 //----------------------------------------------------------------------
 inline void OutReg(outctx_t *ctx, int rgnum) {
+    processor_t &ph = *get_ph();
     if ((rgnum >= 0) && (rgnum < ph.regs_num)) {
         ctx->out_register(ph.reg_names[rgnum]);
     } else {
@@ -22,6 +23,7 @@ inline void OutReg(outctx_t *ctx, int rgnum) {
 inline void OutBadReg(outctx_t *ctx, int rgnum) {
     const char *reg;
 
+    processor_t &ph = *get_ph();
     if ((rgnum >= 0) && (rgnum < ph.regs_num)) {
         reg = ph.reg_names[rgnum];
     } else {
@@ -123,6 +125,8 @@ void out(outctx_t *ctx) {
 
 //--------------------------------------------------------------------------
 void header(outctx_t *ctx) {
+    asm_t &ash = *get_ash();
+
     ctx->gen_cmt_line("Processor:        %s", inf_get_procname().c_str());
     ctx->gen_cmt_line("Target assembler: %s", ash.name);
 }
