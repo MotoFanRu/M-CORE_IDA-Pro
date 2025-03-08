@@ -59,7 +59,7 @@ bool outop(outctx_t *ctx, const op_t &x) {
         OutReg(ctx, x.reg);
         ctx->out_symbol(',');
         ctx->out_char(' ');
-        ctx->out_value(x, 0);
+        ctx->out_value(x, OOF_ADDR | OOFS_NOSIGN);
         ctx->out_symbol(')');
         break;
     case o_near: {
